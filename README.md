@@ -1,4 +1,4 @@
-# GlitchTip Contaner
+# GlitchTip Container
 
 GlitchTip is an open source error tracking and this container raise a glitch tip container throught docker compose.
 
