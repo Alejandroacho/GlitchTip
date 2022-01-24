@@ -17,7 +17,7 @@ services:
     restart: unless-stopped
 
   app:
-    container_name: django-app
+    container_name: glitchtip-django-app
     image: glitchtip/glitchtip
     depends_on: *default-depends_on
     ports:
@@ -26,7 +26,7 @@ services:
     restart: unless-stopped
 
   worker:
-    container_name: celery-worker
+    container_name: glitchtip-celery-worker
     image: glitchtip/glitchtip
     command: ./bin/run-celery-with-beat.sh
     depends_on: *default-depends_on
